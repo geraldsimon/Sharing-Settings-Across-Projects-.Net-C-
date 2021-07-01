@@ -18,7 +18,7 @@ namespace Bussiness.Extensions
 #endif
 
             _config = new ConfigurationBuilder()
-                .SetBasePath(@$"{Directory.GetCurrentDirectory()}\")
+                .SetBasePath(@$"{Directory.GetCurrentDirectory()}\bin\Debug")
                 .AddJsonFile("SharedAppsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"SharedAppsettings.{Environment}.json")
                 .AddJsonFile(@$"appsettings.json")
